@@ -63,10 +63,10 @@ def yolo_detection_App(request):
 		value_to_string = str(value[0])
 		label_predicted = reference_dict[value_to_string]
 		UserHistory.objects.create(
-								   user = request.user,
-								   uploaded_img_path = os.path.join(path_for_image, saved_file),
-								   result = label_predicted
-								  )
+			                   user = request.user,
+					   uploaded_img_path = os.path.join(path_for_image, saved_file),
+					   result = label_predicted
+					  )
 			
 		return render(request, 'result.html', {'context': data_dict})
 
