@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Uploading File</title>
+</head>
+<body>
+<!-- once the user is authenticated and is successfully logined-->
+<!-- he/she is redirected to upload page where person can upload the \-->
+<!-- chest xrays images to detect corona positive or not-->
+<form action="" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+  <input type="file" id="myFile" name="myfile">
+    <br>
+    <br>
+    <br>
+  <input type="submit">
+</form>
+</body>
+</html>

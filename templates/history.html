@@ -1,0 +1,34 @@
+<section>
+  <div class="Jumbotron">
+    <h2 class="center_align jumbotron"> Detail History </h2>
+    <div class="m-3 p-3">
+        <table class="table table-hover">
+            <thead class="custom_table_header">
+              <tr>
+                <th>User</th>
+                <th>Uploaded img path</th>
+                <th>Result</th>
+                <th>Created at</th>
+              </tr>
+            </thead>
+            <tbody>
+<!--            Result after model prediction is shown in form of a table -->
+              {% for each_details in user_history %}  
+              <tr>
+                <td>{{each_details.user}}</td>
+                <td>{{each_details.uploaded_img_path}}</td>
+                <td>{{each_details.result}}</td>
+                <td>{{each_details.created_at}}</td>
+              </tr>
+              {% endfor %}  
+            </tbody>
+      </table>
+    </div>
+
+  </div>
+</section>
+<!--Logout page. When person sees his/her results he or she can logout and comes back \
+to home page
+-----------------------------HOME PAGE--------------------------------------------------
+-->
+<p><a href="{% url 'User_Logout' %}">Please logout by clicking this link</a></p>

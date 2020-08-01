@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result after Yolo Prediction</title>
+</head>
+<body>
+<table>
+{% for key, value in context.items %}
+<tr>
+    <td>{{key}}</td>
+    <td>{{value}}</td>
+</tr>
+{% endfor %}
+</table>
+</body>
+</html>
+
+<h3> Label 0 means positive and 1 means negative</h3>
+
+<p><a href="{% url 'User_History' %}">See All history of user from here</a></p>

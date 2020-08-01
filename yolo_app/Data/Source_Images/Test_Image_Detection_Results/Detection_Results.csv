@@ -1,0 +1,2 @@
+image,image_path,xmin,ymin,xmax,ymax,label,confidence,x_size,y_size
+IM-0273-0001.jpeg,/home/ai/Desktop/all_folders/TrainYourOwnYOLO/yolo_final_model/media/IM-0273-0001.jpeg,214,229,1365,942,1,0.9873119592666626,1522,1093

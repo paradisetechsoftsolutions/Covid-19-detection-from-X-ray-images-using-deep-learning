@@ -1,0 +1,13 @@
+{% block title %}
+HOME PAGE SHOWING SIGN IN AND SIGN UP LINKS
+{% endblock %} 
+<!--Once the user is signed up its entry is registered in
+django.auth.models user table -->
+{% block content %}
+	<h2> Sign up for YOLO App on covid-19</h2>
+ 	<p><a href="{% url 'signup' %}">Please sign up</a></p>
+{% endblock %}
+<br>
+<br>
+<h2> Login if sign up successfully</h2>
+<p><a href="{% url 'login' %}">Please sign in</a></p>
