@@ -10,9 +10,9 @@ Reference to this information can be found at - https://www.sciencedirect.com/sc
 
 # X-ray Image dataset used for classifier
 
-The image dataset used for creating this classifier can be collected at - https://github.com/BIMCV-CSUSP/BIMCV-COVID-19
-Number of positive covid images are - 100
-Number of negative covid images are - 100
+The image dataset used for creating this classifier can be collected at - https://github.com/BIMCV-CSUSP/BIMCV-COVID-19  
+Number of positive covid images are - 100  
+Number of negative covid images are - 100  
 
 A sample image from the dataset for covid-19 positve is shown below :   
 ![1 CXRCTThoraximagesofCOVID-19fromSingapore pdf-000-fig1a](https://user-images.githubusercontent.com/39157936/89102153-02da6600-d424-11ea-8ce1-c0c0e6fc9162.png)
