@@ -74,4 +74,4 @@ Please keep these weights inside the Folder **Data>>Model_Weights**.
 ![database](https://user-images.githubusercontent.com/39157936/89152959-9d9c8700-d581-11ea-91a3-ad8cf9a21f51.png)
 *MySQL database in phpMyadmin*    
 
-**Step 7:** History is created for every logined user and for achieving this step data is retrieved from database using django queries.     
+**Step 7:** History is created for every logged in user and for achieving this step data is retrieved from database using django queries.     
