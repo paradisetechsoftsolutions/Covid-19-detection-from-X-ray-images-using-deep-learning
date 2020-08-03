@@ -36,12 +36,6 @@ A sample image from the dataset for covid-19 negative is shown below :
 │   │       │   ├── IM-0251-0001.jpeg  
 │   │       │   ├── IM-0253-0001.jpeg  
 │   │       │   ├── IM-0261-0001.jpeg  
-│   │       │   ├── IM-0270-0001.jpeg  
-│   │       │   ├── IM-0273-0001_39XLor4.jpeg  
-│   │       │   ├── IM-0273-0001_JGA7cBO.jpeg  
-│   │       │   ├── IM-0273-0001.jpeg  
-│   │       │   ├── IM-0273-0001_zHMAcMp.jpeg  
-│   │       │   └── sanjeev_VsNsBUO.png  
 │   │       └── Test_Images  
 │   ├── Inference  
 │   │   ├── Detector.py  
@@ -56,7 +50,26 @@ A sample image from the dataset for covid-19 negative is shown below :
 │   └── views.py    
 
 # How Model is created     
-**Step 1:** Positive Samples has been taken from [BIMCV-COVID-19](https://github.com/BIMCV-CSUSP/BIMCV-COVID-19) repository, Whereas negative samples has bee taken from [kaggle](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia). So one got two folder one for positive and another for negative. I have used Visual Object Tagging Tool (VoTT) of microsoft to perform tagging. Have a look at the next mentioned link [How to install and use VoTT](https://github.com/microsoft/VoTT). Once you are finished with step, you can export csv file from the VoTT software which is needed for the next step.  
+**Step 1:** Positive Samples has been taken from [BIMCV-COVID-19](https://github.com/BIMCV-CSUSP/BIMCV-COVID-19) repository, Whereas negative samples has bee taken from [kaggle](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia). So one got two folder one for positive and another for negative. I have used Visual Object Tagging Tool (VoTT) of microsoft to perform tagging. Have a look at the next mentioned link [How to install and use VoTT](https://github.com/microsoft/VoTT). Once you are finished with step, you can export csv file from the VoTT software which is needed for the next step. See the link below for viewing the status when annotation has been completed by me using VoTT.   
+
+![imgpsh_fullsize_anim](https://user-images.githubusercontent.com/39157936/89147877-b010c380-d575-11ea-8e4e-d9660c6c92e0.png)   
+
+**Step 2:** Convert the annotation to the yolo format. To achieve this step use [convert to yolo format](https://github.com/AntonMu/TrainYourOwnYOLO/tree/master/1_Image_Annotation/Convert_to_YOLO_format.py)  
+
+**Step 3:** Download the pre-trained dark-net weights and convert them to YOLO format.TO achieve this step, please use the below code [Download and convert to yolo](https://github.com/AntonMu/TrainYourOwnYOLO/blob/master/2_Training/Download_and_Convert_YOLO_weights.py)  
+
+**Step 4:** It is the time for the training of the detector. We got the images as well as its annotation from the step 2. We got the weights from the step 3 in yolo format. Now please execute the below code to get trained the model with the customized images. [Train the yolo model with the customized images](https://github.com/AntonMu/TrainYourOwnYOLO/blob/master/2_Training/Train_YOLO.py)  
+
+**Step 5:** Once the training is finished you will get the new weights in  form of h5 file. For this model I have made the file which one can find in the below link   
+
+[Trained keras H5 file for the customized Dataset](https://drive.google.com/file/d/1K7Dhi5wnsSDul5A6RF0Ec0FpGMW3Y9DZ/view)  
+
+Please keep these weights inside the Folder **Data>>Model_Weights**
+
+
+
+
+
 
 
 
