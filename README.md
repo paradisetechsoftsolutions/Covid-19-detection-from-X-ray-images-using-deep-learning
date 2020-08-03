@@ -55,7 +55,7 @@ A sample image from the dataset for covid-19 negative is shown below :
 │   ├── urls.py  
 │   └── views.py    
 
-# Model Explanation    
-
+# How Model is created     
+Step 1: Images has been taken from 
 
 
