@@ -23,46 +23,6 @@ A sample image from the dataset for covid-19 negative is shown below :
 # Project structure
 
 ├── yolo_app  
-│   ├── 2_Training  
-│   │   ├── __init__.py  
-│   │   └── src  
-│   │       ├── keras_yolo3  
-│   │       │   ├── coco_annotation.py  
-│   │       │   ├── convert.py  
-│   │       │   ├── darknet53.cfg  
-│   │       │   ├── font  
-│   │       │   │   ├── FiraMono-Medium.otf    
-│   │       │   │   └── SIL Open Font License.txt  
-│   │       │   ├── kmeans.py  
-│   │       │   ├── LICENSE  
-│   │       │   ├── model_data  
-│   │       │   │   ├── coco_classes.txt  
-│   │       │   │   ├── voc_classes.txt  
-│   │       │   │   ├── yolo_anchors.txt  
-│   │       │   │   └── yolo-tiny_anchors.txt  
-│   │       │   ├── __pycache__  
-│   │       │   │   ├── yolo.cpython-35.pyc  
-│   │       │   │   └── yolo.cpython-36.pyc  
-│   │       │   ├── README.md  
-│   │       │   ├── train_bottleneck.py  
-│   │       │   ├── train.py  
-│   │       │   ├── voc_annotation.py  
-│   │       │   ├── yolo3  
-│   │       │   │   ├── __init__.py  
-│   │       │   │   ├── model.py  
-│   │       │   │   ├── __pycache__  
-│   │       │   │   │   ├── __init__.cpython-35.pyc  
-│   │       │   │   │   ├── __init__.cpython-36.pyc  
-│   │       │   │   │   ├── model.cpython-35.pyc  
-│   │       │   │   │   ├── model.cpython-36.pyc  
-│   │       │   │   │   ├── utils.cpython-35.pyc  
-│   │       │   │   │   └── utils.cpython-36.pyc  
-│   │       │   │   └── utils.py  
-│   │       │   ├── yolo.py  
-│   │       │   ├── yolov3.cfg  
-│   │       │   ├── yolov3-tiny.cfg  
-│   │       │   └── yolo_video.py  
-│   │       └── README.md  
 │   ├── admin.py  
 │   ├── apps.py  
 │   ├── Data  
@@ -85,28 +45,17 @@ A sample image from the dataset for covid-19 negative is shown below :
 │   │       └── Test_Images  
 │   ├── Inference  
 │   │   ├── Detector.py  
-│   │   ├── __init__.py  
-│   │   ├── __pycache__  
-│   │   │   ├── Detector.cpython-35.pyc  
-│   │   │   └── __init__.cpython-35.pyc  
-│   │   └── README.md  
 │   ├── __init__.py  
 │   ├── migrations  
 │   │   ├── 0001_initial.py  
 │   │   ├── __init__.py  
-│   │   └── __pycache__  
-│   │       ├── 0001_initial.cpython-35.pyc  
-│   │       └── __init__.cpython-35.pyc  
 │   ├── models.py  
 │   ├── requirements.txt  
 │   ├── tests.py  
 │   ├── urls.py  
-│   ├── Utils  
-│   │   ├── Convert_Format.py  
-│   │   ├── Get_File_Paths.py  
-│   │   ├── __init__.py     
-│   │   ├── Train_Utils.py    
-│   │   └── utils.py    
-│   └── views.py  
+│   └── views.py    
+
+# Model Explanation    
+
 
 
