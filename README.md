@@ -50,7 +50,8 @@ A sample image from the dataset for covid-19 negative is shown below :
 │   └── views.py    
 
 # How Model is created     
-**Step 1:** Positive Samples has been taken from [BIMCV-COVID-19](https://github.com/BIMCV-CSUSP/BIMCV-COVID-19) repository, Whereas negative samples has bee taken from [kaggle](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia). So one got two folder one for positive and another for negative. I have used Visual Object Tagging Tool (VoTT) of microsoft to perform tagging. Have a look at the next mentioned link [How to install and use VoTT](https://github.com/microsoft/VoTT). Once you are finished with step, you can export csv file from the VoTT software which is needed for the next step. See the link below for viewing the status when annotation has been completed by me using VoTT.   
+**Step 1:** Positive Samples has been taken from [BIMCV-COVID-19](https://github.com/BIMCV-CSUSP/BIMCV-COVID-19) repository, Whereas negative samples has been taken from [kaggle](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia). Correspondingly, there are two folders, one for positive and another for negative. I have used Visual Object Tagging Tool (VoTT) of microsoft to perform tagging. Check this link for installation and usage of this software - [How to install and use VoTT](https://github.com/microsoft/VoTT).  
+Once you are finished with tagging step, you can export csv file from the VoTT software which is needed for the next step. See the link below for viewing the status when annotation has been completed by me using VoTT.   
 
 ![imgpsh_fullsize_anim](https://user-images.githubusercontent.com/39157936/89147877-b010c380-d575-11ea-8e4e-d9660c6c92e0.png) 
 *Images Annotation using VoTT*
@@ -59,19 +60,18 @@ A sample image from the dataset for covid-19 negative is shown below :
 
 **Step 3:** Download the pre-trained dark-net weights and convert them to YOLO format.TO achieve this step, please use the below code [Download and convert to yolo](https://github.com/AntonMu/TrainYourOwnYOLO/blob/master/2_Training/Download_and_Convert_YOLO_weights.py)  
 
-**Step 4:** It is the time for the training of the detector. We got the images as well as its annotation from the step 2. We got the weights from the step 3 in yolo format. Now please execute the below code to get trained the model with the customized images. [Train the yolo model with the customized images](https://github.com/AntonMu/TrainYourOwnYOLO/blob/master/2_Training/Train_YOLO.py)  
+**Step 4:** It is the time for the training of the detector. We got the images as well as its annotation from the step 2. We got the weights from the step 3 in yolo format. Now you can execute the below code to get trained the model with the customized images. [Train the yolo model with the customized images](https://github.com/AntonMu/TrainYourOwnYOLO/blob/master/2_Training/Train_YOLO.py)  
 
 **Step 5:** Once the training is finished you will get the new weights in  form of h5 file. For this model I have made the file which one can find in the below link   
 
 [Trained keras H5 file for the customized Dataset](https://drive.google.com/file/d/1K7Dhi5wnsSDul5A6RF0Ec0FpGMW3Y9DZ/view)  
 
-Please keep these weights inside the Folder **Data>>Model_Weights**. Once can skip first four steps because the purpose of those steps were to create weights for the step 5. If one is training with different images those steps are needed. Please install all the requirements first from requirements file.  
+Please keep these weights inside the Folder **Data>>Model_Weights**.   
 
-**Step 6:** Django model has been made for this. only the logined user will upload the image and result will be displayed to their login page. Results are also saved in the database as well as history link is also created for login user to see the result on their login page. Application is linked with phpmyadmin mysql database. See the below screenshot      
+> One can skip first four steps because the purpose of those steps were to create weights for the step 5. If one is training with different images those steps are needed. Please install all the requirements first from requirements file.  
+
+**Step 6:** Django model has been made for this. only the logged in user will upload the image and result will be displayed to their login page. Results are also saved in the database as well as history link is also created for login user to see the result on their login page. Application is linked with phpmyadmin mysql database. See the below screenshot      
 ![database](https://user-images.githubusercontent.com/39157936/89152959-9d9c8700-d581-11ea-91a3-ad8cf9a21f51.png)
 *MySQL database in phpMyadmin*    
 
 **Step 7:** History is created for every logined user and for achieving this step data is retrieved from database using django queries.     
-
-**Thanks for reading the ReadMe File.**
-
