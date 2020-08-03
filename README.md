@@ -56,6 +56,8 @@ A sample image from the dataset for covid-19 negative is shown below :
 │   └── views.py    
 
 # How Model is created     
-Step 1: Images has been taken from 
+**Step 1:** Positive Samples has been taken from [BIMCV-COVID-19](https://github.com/BIMCV-CSUSP/BIMCV-COVID-19) repository, Whereas negative samples has bee taken from [kaggle](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia). So one got two folder one for positive and another for negative. I have used Visual Object Tagging Tool (VoTT) of microsoft to perform tagging. Have a look at the next mentioned link [How to install and use VoTT](https://github.com/microsoft/VoTT). Once you are finished with step, you can export csv file from the VoTT software which is needed for the next step.  
+
+
 
 
